@@ -1,0 +1,103 @@
+What is data modelling 
+
+A Data Model in Database Management System (DBMS)  is the concept of tools that are developed to summarize the description of the database. 
+
+ Data Models provide us with a transparent picture of data which helps us in creating an actual database
+
+It shows us from the design of the data to its proper implementation of data.
+
+________________________________________________________________________
+
+What is E-R modeling
+
+The Entity Relationship Model is a model for identifying entities (like student, car or company) to be represented in the database and representation of how those entities are related.
+
+The ER data model specifies enterprise schema that represents the overall logical structure of a database graphically.
+
+uses:-
+
+ER diagrams represent the E-R model in a database, making them easy to convert into relations (tables).
+
+ER diagrams serve the purpose of real-world modeling of objects which makes them intently useful.
+
+ER diagrams require no technical knowledge of the underlying DBMS used.
+
+It gives a standard solution for visualizing the data logically.
+
+
+________________________________________________________________________
+
+What is DBMS and what are its feature over filesystem
+
+A DBMS is a system that allows users to create, modify, and query databases while ensuring data integrity, security, and efficient data access.
+It organizes data into tables, views, schemas, and reports, providing a structured approach to data management.
+
+Example:
+A university database can store and manage student information, faculty records, and administrative data, allowing seamless retrieval, insertion, and deletion of information as required.
+
+
+Features of DBMS:-
+
+Data Modeling: Tools to create and modify data models, defining the structure and relationships within the database.
+
+Data Storage and Retrieval: Efficient mechanisms for storing data and executing queries to retrieve it quickly.
+
+Concurrency Control: Ensures multiple users can access the database simultaneously without conflicts.
+
+Data Integrity and Security: Enforces rules to maintain accurate and secure data, including access controls and encryption.
+
+Backup and Recovery: Protects data with regular backups and enables recovery in case of system failures.
+
+_______________________________________________________________________
+
+Type of DBMS with brief on each one of them
+
+
+Types of DBMS :-
+
+
+ Relational Database Management System (RDBMS)
+______________________________________________
+
+RDBMS organizes data into tables (relations) composed of rows and columns.
+
+It uses primary keys to uniquely identify rows and foreign keys to establish relationships between tables.
+
+Queries are written in SQL (Structured Query Language), which allows for efficient data manipulation and retrieval.
+
+Examples: MySQL, Oracle.
+
+________________________________________________________________________
+
+
+NoSQL DBMS
+__________
+
+NoSQL systems are designed to handle large-scale data and provide high performance for scenarios where relational models might be restrictive.
+
+They store data in various non-relational formats, such as key-value pairs, documents, graphs, or columns.
+
+These flexible data models enable rapid scaling and are well-suited for unstructured or semi-structured data.
+
+Examples: MongoDB
+
+________________________________________________________________________
+
+
+Object-Oriented DBMS (OODBMS)
+____________________________
+
+OODBMS integrates object-oriented programming concepts into the database environment, allowing data to be stored as objects.
+
+This approach supports complex data types and relationships, making it ideal for applications requiring advanced data modeling and real-world simulations.
+
+Examples: ObjectDB, db4o.
+
+________________________________________________________________________
+
+
+
+
+
+
+
