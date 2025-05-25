@@ -1,0 +1,60 @@
+KEYS IN SQL:-
+_____________
+
+Super key is a single key or a group of multiple keys that can uniquely identify tuples in a table.
+
+Super Key can contain multiple attributes that might not be able to identify tuples in a table independently, but when grouped with certain keys, they can uniquely identify tuples.
+
+_________________________________________________________________________________________
+
+The candidate key is a single key or a group of multiple keys uniquely identifying table rows.
+
+A candidate key is a column or a combination of columns uniquely identifying each row in a table. It is used to ensure that there are no duplicate or ambiguous records in the table.
+
+A Candidate key is a subset of Super keys devoid of unnecessary attributes that are unimportant for uniquely identifying tuples. For this reason, you can also call the Candidate key a minimal Super key.
+
+The value for the Candidate key is unique and non-null for all tuples. It encapsulates two important constraints – the unique key and not null constraints. This ensures that values in the Candidate key do not contain duplicate values. And every table has to have at least one Candidate key. But there can be more than one Candidate Key too.
+
+___________________________________________________________________________________________
+
+Primary key is the Candidate key selected by the database administrator to uniquely identify tuples in a table.
+
+__________________________________________________________________________________________
+
+Alternate keys are those candidate keys which are not the Primary key.
+
+There can only be one Primary key for a table. Therefore, all the remaining Candidate keys are known as Alternate or Secondary keys. They can also uniquely identify tuples in a table, but the database administrator chose a different Primary key.
+
+___________________________________________________________________________________________
+
+Foreign key is an attribute which is a Primary key in its parent table, but is included as an attribute in another host table.
+
+A foreign key generates a relationship between the parent and host tables.
+
+__________________________________________________________________________________________
+
+
+Different Types of Keys in SQL
+Key Type	     Characteristics            		   	  Purpose
+________             _______________                                      ________
+
+Super key		Can contain redundant attributes		Uniquely identifies tuples in a table
+
+Candidate key		Contains only necessary attributes		Identifies tuples uniquely, subset of super key
+
+Primary key		Unique and non-null				Uniquely identifies tuples in the table
+
+Alternate key		–	  					Not chosen as primary key
+
+Composite key		More than one attribute				Identifies tuples uniquely
+
+Foreign key		Linked to primary key in another table		Maintains referential integrity, establishes relationships
+
+_____________________________________________________________________________________________________________________________________________
+
+
+
+
+
+
+
