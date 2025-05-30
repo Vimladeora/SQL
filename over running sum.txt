@@ -1,0 +1,44 @@
+use sakila;
+select payment_id , customer_id , amount from payment;
+
+select avg(amount) from payment group by customer_id;
+
+select payment_id, customer_id, amount ,
+avg(amount) over(),
+sum(amount) over(),
+max(amount) over() from payment;
+
+select payment_id, customer_id, amount ,
+avg(amount) over(),
+sum(amount) over(partition by customer_id) from payment;
+
+select payment_id, customer_id, amount ,
+avg(amount) over(),
+sum(amount) over(order by amount desc) from payment;
+
+use employees;
+select * from employees;
+
+select * from salaries;
+
+-- get the emp no. the salary and  the  total salary and the avg salry from the emp table 
+-- get the emp no. salary year of hiring along with the avg saalry of that emp from the salary table
+-- get the emp. no salary and the running salary for each customer from salary table
+
+select emp_no, salary,sum(salary)  over(), avg(salary) over() from salaries;
+
+create table salary1
+as select * from salaries limit 200; 
+
+
+select emp_no, salary,sum(salary) over(), avg(salary) over() from salary1;
+
+select emp_no, salary , avg(salary) over(partition by emp_no) , year (from_date) from salary1;
+
+select emp_no , salary, sum(salary) over(order by salary) from salary1;
+
+
+
+
+
+
